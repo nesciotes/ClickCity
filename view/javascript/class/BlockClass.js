@@ -12,3 +12,4 @@ function Block($_PARAMETER) {
 		type = $_PARAMETER['type'];
 	}
 }
+//thegame
