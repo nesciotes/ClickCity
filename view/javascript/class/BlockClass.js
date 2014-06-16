@@ -1,15 +1,10 @@
 /**
- * BlockClass
+ * Block
  */
 
-function Block($_PARAMETER) {
-	var pos;  	// Position
-	var type; 	// Blocktype
-	var light;	// int
-	
-	var constructor = function(){
-		pos = $_PARAMETER['pos'];
-		type = $_PARAMETER['type'];
-	}
+function Block(_pos, _type)
+{
+	var pos 	= _pos;  	// Position
+	var type 	= _type; 	// Blocktype
+	var light 	= 0;		// int
 }
-//thegame
