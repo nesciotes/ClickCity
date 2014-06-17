@@ -29,7 +29,6 @@ Clock.prototype.doTick = function()
 {
 	time += STATICS.clockspeed;
 	if(time >= 1440) addDay();
-	Time(time);
 }; 
 
 function getTick()
