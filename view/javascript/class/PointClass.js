@@ -1,7 +1,3 @@
-/**
- * Point
- */
-
 function Point(_x, _y, _z)
 {
 	this.x = _x;	// float

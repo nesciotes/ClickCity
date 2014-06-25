@@ -1,7 +1,3 @@
-/**
- * Player
- */
-
 function Player(_id)
 {
 	var id = _id;		//int
@@ -21,14 +17,14 @@ Player.prototype.getId = function()
 	return id;
 };
 
-Player.prototype.moveUp = function()
+Player.prototype.moveForward = function()
 {
-	pos.up(STATICS.movespeed);
+	pos.fwd(STATICS.movespeed);
 };
 
-Player.prototype.moveDown = function()
+Player.prototype.moveBackward = function()
 {
-	pos.down(STATICS.movespeed);
+	pos.bwd(STATICS.movespeed);
 };
 
 Player.prototype.moveLeft = function()
@@ -41,14 +37,14 @@ Player.prototype.moveRight = function()
 	pos.right(STATICS.movespeed);
 };
 
-Player.prototype.moveJump = function()
+Player.prototype.moveUp = function()
 {
-	pos.jump();
+	pos.up();
 };
 
-Player.prototype.moveFall = function()
+Player.prototype.moveDown = function()
 {
-	pos.fall();
+	pos.down();
 };
 
 Player.prototype.getPayed = function(amount)

@@ -1,9 +1,3 @@
-/**
- * Clock
- */
-
-
-
 function Clock()
 {
 	//.DB_get _time, _day?
