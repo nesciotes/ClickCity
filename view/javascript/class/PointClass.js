@@ -3,7 +3,7 @@ function Point(_x, _y, _z)
 	this.x = _x;	// float
 	this.y = _y;	// float
 	this.z = _z;	// float
-}
+};
 
 Point.prototype.distanceTo = function(pointTo)
 {

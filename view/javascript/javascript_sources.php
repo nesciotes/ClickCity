@@ -8,19 +8,20 @@
 		"class/BlocktypeClass",
 		"class/ClockClass",
 		"class/PlayerClass",
-		"class/PointClass"
+		"class/PointClass",
+		"class/DimensionClass",
+		"class/BuildClass",
+		"class/GameClass",
+		"class/Mapclass"
 	);
 
 	foreach ($javascript_files as $file){
 		if(!isSet($_GET['debug'])){
-			#remove comments
-			
-			
-			#print without whitespaces and breaks
+			#print without whitespaces, breaks or comments
 			echo preg_replace('/[ \t]+/', ' ', 
-					preg_replace('/[\r\n]+/', "", 
-						preg_replace('/\/\/(.*)\\n/', "", 
-							file_get_contents($file . ".js"))));
+			     preg_replace('/[\r\n]+/', "", 
+				 preg_replace('/\/\/(.*)\\n/', "", 
+				 file_get_contents($file . ".js"))));
 		} else {
 			#print normal
 			echo file_get_contents($file . ".js");
