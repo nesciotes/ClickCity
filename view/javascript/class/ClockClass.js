@@ -1,10 +1,8 @@
 function Clock()
 {
 	//.DB_get _time, _day?
-	
 	var time			= _time; //integer
 	var day 			= _day;  //integer
-	
 
 	var addDay = function()
 	{
@@ -12,7 +10,7 @@ function Clock()
 		day++;
 	};
 	doTick();
-}
+};
 
 Clock.prototype.Time = function()
 {
@@ -28,4 +26,4 @@ Clock.prototype.doTick = function()
 function getTick()
 {
 	return time;
-}
+};

@@ -4,4 +4,4 @@ function Blocktype(_name, _texture, _dimension, _solid)
 	var texture 	= _texture;		// Texture
 	var dimension 	= _dimension;	// dimension
 	var solid 		= _solid;		// boolean
-}
+};

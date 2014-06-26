@@ -5,7 +5,7 @@ function Player(_id)
 	var name;			//string
 	var money;			//float
 	var pos;			//Point
-}
+};
 
 Player.prototype.getPosition = function()
 {
